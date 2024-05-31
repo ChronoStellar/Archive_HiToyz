@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="gallery.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hi-Toyz</title>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <img src="../Assets/store/logo.png">
+                <span class="search-container">
+                    <form>
+                        <input type="text" placeholder="search" id="search" size="25">
+                        <!-- <button type="reset" onclick="button_search()"><i class="fa fa-search"></i></button> -->
+                        <button type="reset" onclick="button_search()"><em></em></button>
+                        <script src="button-search.js"></script>
+                    </form>
+                </span>
+            <img id="profilepic" src="../Assets/extra/aerial.jpg">
+            <span id="profile-reg"><a href="register.html">Register</a></span>
+        </div>
+        <nav>
+            <ul class="navBar">
+                <li><a href="event.html">Event</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <div class="mainBox">
+                <img src="../Assets/bg/Rectangle 28.png">
+                <div class="contentBox">
+                    <h1>Gallery</h1><hr>
+                    <div class="contentContainer">
+                        <div class="slide1Box">
+                            <img class="slide1 start" src="../Assets/store/building/display5.jpg">
+                            <img class="slide1" src="../Assets/store/gallery/selfuc.jpg">
+                            <img class="slide1" src="../Assets/store/gallery/ooo.jpg">
+                            <img class="slide1" src="../Assets/store/gallery/uc.jpg">
+                            <img class="slide1" src="../Assets/store/gallery/aerial.jpg">
+                            <img class="slide1" src="../Assets/store/gallery/hinu.jpg">
+                        </div>
+                        <div class="slide2Box">
+                            <div class="slide2 slide2-ff demo" onclick="currentDiv(1)"><img src="../Assets/store/building/display5.jpg"></div>
+                            <div class="slide2 slide2-ff demo" onclick="currentDiv(2)"><img src="../Assets/store/gallery/selfuc.jpg"></div>
+                            <div class="slide2 slide2-ff demo" onclick="currentDiv(3)"><img src="../Assets/store/gallery/ooo.jpg"></div>
+                            <div class="slide2 slide2-ff demo" onclick="currentDiv(4)"><img src="../Assets/store/gallery/uc.jpg"></div>
+                            <div class="slide2 slide2-ff demo" onclick="currentDiv(5)"><img src="../Assets/store/gallery/aerial.jpg"></div>
+                            <div class="slide2 slide2-ff demo" onclick="currentDiv(6)"><img src="../Assets/store/gallery/hinu.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <script src="slide2.js"></script>
+    <footer>
+        <div class="footer">
+            <div class="about-us">
+                <h3>About Us</h3>
+                <p>
+                    Established in 2019, HI-Toyz is a beloved toy store offering plastic model kits and figure statues. 
+                    We cater to local collectors, provide a diverse selection of toys, and serve as an activity center. 
+                    As an official reseller for top brands like Tamiya, Bandai, and Mattel, we bring joy to toy enthusiasts.
+                </p>
+            </div><hr>
+            <div class="contact-us">
+                <h3>Contact Us</h3>
+                <p><img class="icon adjust-icon" src="../Assets/icons/location.png"> v93 street, Anaheim District,
+                    Londonium, Moon,
+                    Side3 Colony, RX-93</p>
+                <p><img class="icon adjust-icon" src="../Assets/icons/mail.png"> contact-us@hitoyz.com</p>
+                <p><img class="icon adjust-icon" src="../Assets/icons/phone.png"> +1 123-456-7890</p>
+            </div><hr>
+            <div>
+                <h3>Connect With Us</h3>
+                <ul class="social-media">
+                    <li><a href="#"><img class="icon adjust-icon" src="../Assets/icons/facebook.png"></a></li><br>
+                    <li><a href="#"><img class="icon adjust-icon" src="../Assets/icons/twitter.png"></a></li><br>
+                    <li><a href="#"><img class="icon adjust-icon" src="../Assets/icons/insta.png"></a></li><br>
+                    <li><a href="#"><img class="icon adjust-icon" src="../Assets/icons/linkedin.png"></a></li><br>
+              </ul>
+            </div><hr>
+            <div class="term-service">
+                <p>&copy; 2023 Your Website. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+main{
+    background-color: #FBFBFB;
+    background-image: url(../Assets/bg/RX-78-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4%;
+}
+.fodder{
+    color:#FBFBFB;
+}
+.form-box{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: 3%;
+    padding-bottom: 5%;
+    box-shadow: 10px black;
+    overflow: hidden;
+    box-shadow: 10px 10px;
+}
+.form-box h1{
+    margin-left: 5%
+}
+.form-box hr{
+    width: 90%;
+}
+.form-box form{
+    margin-left: 5%;
+}
+#input-name , #input-password, #input-email, #input-date{
+    height :3em;
+    width: 40em;
+    background-color: aliceblue;
+    border-radius: 1em;
+    padding-left:1em
+}
+form tr td{
+    padding-bottom: 0.5em;
+}
+td span{
+    font-size: 1.5em;
+}
+.terms-agreement{
+    text-align: right;
+}
+.submit{
+    text-align: center;
+}
+.submit input{
+    background-color: #0060DB;
+    width: 8em;
+    height: 2em;
+    border: none;
+    border-radius: 1em;
+    color:white;
+    box-shadow: 0.2em 0.2em blue;
+}
+.submit input:hover{
+    background-color: #27518B;
+    box-shadow: 0.2em 0.2em #0060DB;
+    font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+    #input-name , #input-password, #input-email, #input-date{
+        height :3em;
+        width: 25em;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .form-box{
+        margin-left: 10em;
+        width: 60%;
+        box-shadow: 5px 5px black;
+    }
+    #input-name , #input-password, #input-email, #input-date{
+        height :3em;
+        width: 20em;
+    }
+}

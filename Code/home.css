@@ -1,0 +1,167 @@
+.brandBox{
+    position: relative;
+    display: flex;
+    /* z-index: 1; */
+}
+.brandBox .brandContainer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:25.35%;
+    background-color: white;
+    margin-top:2%;
+    padding: 2%;
+    width: 67.58%;
+    height: 91.53%;
+    z-index: 10;
+    justify-content: space-between;
+}
+.brand{
+    display: flex;
+    width: 99%;
+    height: 40%;
+    /* background-color: aqua; */
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.brandContainer h1{
+    margin:0;
+    text-align: center;
+}
+.brandItem{
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    /* background-color: red; */
+}
+.brandItem img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.goodsmile{
+    padding-top:8%
+}
+.kotobukiya{
+    padding-top:5%;
+}
+.tamiya{
+    padding-top:1%
+}
+.mattel{
+    margin-top: -1%;
+}
+/* //////////////////////////////////////////////////// */
+.hotContainer{
+    position: relative;
+    display: flex;
+    padding-left: 3em;
+    background-color: #F5F5F5;
+    /* padding:2em; */
+}
+.hotContainer img{
+    opacity: 10%;
+    height: 30em;
+}
+.itemContainer{
+    display: flex;
+    flex-direction: column;
+    position : absolute;
+    z-index: 10;
+    height: 100%;
+    width: 90%;
+    /* background-color: aliceblue; */
+}
+.itemTitle{
+    width: 100%;
+    display: flex;
+    overflow: visible;
+    height: 70%;
+}
+.hotItemsBase{
+    background-image: url("../Assets/extra/shin=kr\ \(1\).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1em;
+    padding: 3em;
+    width: 25%;
+    height: 80%;
+    border-radius: 1em;
+}
+.cardBox{
+    display: flex;
+    margin-top:3em;
+    margin-left: -3em;
+    height: 70%;
+    width: 150%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+.card{
+    padding-top:0.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow : 2px 2px 2px 2px black;
+    border-radius: 1em;
+    background-color: white;
+    width: 20%;
+    height: 130%;
+    cursor: pointer;
+}
+.cardImg{
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    width: 90%;
+}
+.card hr{
+    width: 80%;
+}
+.card img{
+    opacity: 100%;
+    width: 100%;
+    height: 100%;
+}
+.card span{
+    text-align: center;
+}
+.card:hover{
+    opacity: 95%;
+}
+@media only screen and (max-width: 768px) {
+    h1, i{
+        font-size: large;
+    }
+    .hotContainer img{
+        height: 25em;
+    }
+    .card{
+        margin-top: -1em;
+        height: 120%;
+        box-shadow: 2px 2px black;
+    }
+    .cardImg img{
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    h1, i{
+        font-size:small;
+    }
+    .hotContainer ,.itemTitle{
+        overflow-x: scroll;
+    }
+    .hotContainer img{
+        height: 25em;
+    }
+    .card{
+        margin-top: -1em;
+        height: 12.5em;
+        width: 8em;
+    }
+    .cardImg img{
+        height: 100%;
+    }
+}

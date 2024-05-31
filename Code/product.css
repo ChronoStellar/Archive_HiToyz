@@ -1,0 +1,224 @@
+.bg{
+    position: relative;
+    height: 10em;
+    display: flex;
+    background-color: #f5f5f5;
+    background-image: url("../Assets/store/hotItems.jpg");
+}
+.bg img{
+    height: 10em;
+}
+.bgImg{
+    opacity: 0;
+}
+.slide{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    z-index: 10;
+    margin-left: 18.5%;
+}
+.slides{
+    border-radius: 1em;
+    max-width: auto;
+    max-height: auto;
+}
+
+/* //////////////////////////////////////////////////// */
+.hotContainer{
+    position: relative;
+    display: flex;
+    padding-left: 3em;
+    background-color: #F5F5F5;
+    /* padding:2em; */
+}
+.hotContainer img{
+    opacity: 10%;
+    height: 30em;
+}
+.itemContainer{
+    display: flex;
+    flex-direction: column;
+    position : absolute;
+    z-index: 10;
+    height: 100%;
+    width: 90%;
+    /* background-color: aliceblue; */
+}
+.itemContainer hr{
+    width: 100%;
+}
+.itemTitle{
+    width: 100%;
+    display: flex;
+    overflow: visible;
+    height: 70%;
+}
+.hotItemsBase{
+    background-image: url("../Assets/extra/shin=kr\ \(1\).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1em;
+    padding: 3em;
+    width: 25%;
+    height: 80%;
+    border-radius: 1em;
+}
+.cardBox{
+    display: flex;
+    margin-top:3em;
+    margin-left: -3em;
+    height: 70%;
+    width: 150%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+.card{
+    padding-top:0.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow : 2px 2px 2px 2px black;
+    border-radius: 1em;
+    background-color: white;
+    width: 20%;
+    height: 130%;
+    cursor: pointer;
+}
+.cardImg{
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    width: 90%;
+}
+.card hr{
+    width: 80%;
+}
+.card img{
+    opacity: 100%;
+    width: 100%;
+    height: 100%;
+}
+.card span{
+    text-align: center;
+}
+.card:hover{
+    opacity: 95%;
+}
+/* ///////////////////////////////////////// */
+.base-product{
+    background-color: #0063DB;
+    display: flex;
+}
+.base-product img{
+    opacity: 0;
+    height: 85em;
+}
+.productContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    background-color: #f5f5f5;
+    width: 90%;
+    height: 90%;
+    margin: 3% 5% 0 5%;
+}
+.productContainer h2{
+    text-align: center;
+    margin: 0;
+}
+.productContainer hr{
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.productBox{
+    display: flex;
+    flex-direction: row;
+    /* background-color:aliceblue; */
+    width: 100%;
+    height: 25%;
+    gap: 0.5em;
+    justify-content: center;
+}
+.Pcard{
+    /* background-color: black; */
+    overflow: hidden;
+    height: 100%;
+    width: 19%;
+    box-shadow: 0.5px 0.5px 0.5px black;
+    cursor: pointer;
+}
+.PcardImg:hover{
+    opacity: 90%;
+}
+.PcardImg{
+    display: flex;
+    background-color: rgb(192, 192, 192);
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.PcardImg img{
+    opacity: 100;
+    height: auto;
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .slide{
+        margin-left: 10%;
+    }
+    .hotContainer img{
+        height: 25em;
+    }
+    .card{
+        height: 120%;
+    }
+    .cardImg img{
+        height: 100%;
+    }
+    h2,i{
+        font-size: large;
+    }
+    .PcardImg{
+        height: 65%;
+        object-fit: contain;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .slide{
+        margin-left: 1.5%;
+    }
+    .hotContainer ,.itemTitle{
+        overflow-x: scroll;
+    }
+    .hotContainer img{
+        height: 25em;
+    }
+    .card{
+        margin-top: -1em;
+        height: 12.5em;
+        width: 8em;
+    }
+    .cardImg img{
+        height: 100%;
+    }
+    h2,i{
+        font-size: large;
+    }
+    .PcardImg{
+        height: 65%;
+        object-fit: contain;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .slide{
+        margin-left: 0%;
+    }
+
+}
